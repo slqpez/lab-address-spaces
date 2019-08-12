@@ -1,0 +1,33 @@
+1. 
+free muestra la cantidad total de memoria física y de intercambio libre y usada en el sistema, así como
+Los buffers y cachés utilizados por el kernel. La información se recopila analizando
+/ proc / meminfo.
+
+2.
+             total        used        free      shared  buff/cache   available
+Mem:           7930        1807         338          79        5784        5697
+Swap:          8012           0        8012
+
+Sí, son los valores que esperabamos, ya que se pueden evidenciar los casi 8G de ram que tiene el computador.
+
+4.
+                 total        used        free      shared  buff/cache   available
+Mem:        8120852     2370980      171976       96796     5577896     5298720
+Swap:       8205308         140     8205168
+
+No coinciden los valores con los que esperabamos, ya que creíamos que se iban a reiniciar a los de la memeoria del numeral 2.
+
+5.
+El comando pmap informa el mapa de memoria de un proceso o procesos.
+La difrencia con el free es que este muestra la memoria del sistema, y el pmap del proceso.
+
+7.
+Nos muestra los diferentes archivos mapeados en memoria para el proceso elegido. Sus direcciones en memoria, sus permisos correspondientes ,también podemos observar direcciones de memoria asignadas al código(archivos), asignada al heap(annon) y asignada al stack(stack) 
+
+8.
+Se puede observar que la cantidad total de memoria usada va conforme a la cantidad de memoria que se separa al momento de ejecutar el proceso. 
+También se observa que el tamaño de la memoria usada en las diferentes ejecuciones varía únicamente en el heap, el resto de memoria usada en cada entidad de memoria es exactamente la misma para cada ejecución.
+
+
+
+
